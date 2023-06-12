@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profesor Investigador</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Dr. Juan Pérez</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#investigacion" onclick="showSection('investigacion')">Investigación</a></li>
-            <li class="nav-item"><a class="nav-link" href="#publicaciones" onclick="showSection('publicaciones')">Publicaciones</a></li>
-            <li class="nav-item"><a class="nav-link" href="#docencia" onclick="showSection('docencia')">Docencia</a></li>
-            <li class="nav-item"><a class="nav-link" href="#proyectos" onclick="showSection('proyectos')">Proyectos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#equipo" onclick="showSection('equipo')">Equipo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto" onclick="showSection('contacto')">Contacto</a></li>
-          </ul>
-        </div>
+      <a class="navbar-brand">Dr. Juan Pérez</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showSection('bienvenido')">Bienvenido</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showSection('investigacion')">Investigación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showSection('publicaciones')">Publicaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showSection('docencia')">Docencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showSection('proyectos')">Proyectos</a>
+          </li>
+ 
+          <li class="nav-item"><a class="nav-link" href="#"  onclick="showSection('equipo')">Equipo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('contacto')">Contacto</a></li>
+
+          
+        </ul>
       </div>
     </nav>
   </header>
-
-  <section id="inicio" class="section">
-    <div class="container">
-      <h1>Bienvenidooooo</h1>
-      <p>Texto de introducción y descripción de los intereses de investigación.</p>
-      <img src="foto.jpg" alt="Foto del profesor" class="img-fluid">
-    </div>
-  </section>
-<!-- ... Código HTML anterior ... -->
-
+  
+  <section id="bienvenido">
+  <div class="container">
+     <h1>Bienvenidooooo</h1>
+     <p>Texto de introducción y descripción de los intereses de investigación.</p>
+    <img src="foto.jpg" alt="Imagen del profesor">
+    <p>Texto de bienvenida...</p>
+  </div>
+</section>
+  
 <section id="investigacion" class="section" hidden>
   <div class="container">
     <h2>Investigación</h2>
@@ -56,7 +66,7 @@
     </ul>
   </div>
 </section>
-
+  
 <section id="publicaciones" class="section" hidden>
   <div class="container">
     <h2>Publicaciones</h2>
@@ -70,7 +80,7 @@
   </div>
 </section>
 
-<section id="docencia" class="section">
+<section id="docencia" class="section" hidden>
   <div class="container">
     <h2>Docencia</h2>
     <p>En mi rol como docente, imparto diversos cursos relacionados con Ciencias Computacionales e Inteligencia Artificial. Algunos de los cursos que he enseñado incluyen:</p>
@@ -83,7 +93,7 @@
   </div>
 </section>
 
-<section id="proyectos" class="section">
+<section id="proyectos" class="section" hidden>
   <div class="container">
     <h2>Proyectos</h2>
     <p>A lo largo de mi carrera, he participado en diversos proyectos relacionados con la Inteligencia Artificial. Algunos de los proyectos destacados en los que he estado involucrado incluyen:</p>
@@ -99,27 +109,30 @@
 <!-- ... Resto del código HTML ... -->
 
 
-  <section id="equipo" class="section">
+  <section id="equipo" class="section" hidden>
     <div class="container">
       <h2>Equipo de Investigación</h2>
       <p>Descripción del equipo de investigación.</p>
     </div>
   </section>
 
-  <section id="contacto" class="section">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Información de contacto.</p>
+<section id="contacto" class="section" hidden>
+  <div class="container">
+    <h1>Contacto</h1>
+    <p>Texto de contacto...</p>
+    
+    <div class="calendar-embed">
+      <iframe src="https://calendar.google.com/calendar/embed?src=irving.cruz%40udem.edu&ctz=America%2FMexico_City" style="border: 0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
     </div>
-  </section>
-
-  <footer>
+  </div>
+</section>
+  
+ <footer>
     <div class="container">
       <p>Derechos de autor &copy; 2023 Dr. Juan Pérez. Todos los derechos reservados.</p>
     </div>
   </footer>
-
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+  
   <script src="script.js"></script>
 </body>
 </html>

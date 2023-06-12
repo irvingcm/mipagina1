@@ -1,12 +1,12 @@
 function showSection(sectionId) {
-  // Ocultar todas las secciones
-  const sections = document.querySelectorAll('.section');
-  sections.forEach((section) => {
-    section.style.display = 'none';
-  });
-
-  // Mostrar la sección seleccionada
-  const sectionToShow = document.getElementById(sectionId);
-  sectionToShow.style.display = 'block';
+  // Oculta todas las secciones
+  var sections = document.getElementsByTagName('section');
+  for (var i = 0; i < sections.length; i++) {
+    sections[i].hidden = true;
+  }
+  
+  // Muestra la sección seleccionada
+  var section = document.getElementById(sectionId);
+  section.hidden = false;
 }
 
